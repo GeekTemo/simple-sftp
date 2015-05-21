@@ -27,7 +27,7 @@ public class SFTPClient {
 	 * @param port
 	 * @return
 	 */
-	public static Integer newSession(String host, String user, String password,
+	protected static Integer newSession(String host, String user, String password,
 			Integer port) {
 		Integer seqNum = SFTPClientContext.nextSequence();
 		SFTPSession session = new SFTPSession(host, user, password, port,
